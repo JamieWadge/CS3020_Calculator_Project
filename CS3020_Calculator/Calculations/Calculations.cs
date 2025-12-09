@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CS3020_Calculator.Calculations
 {
-    public abstract class Calculation
+    public interface Calculation
     {
-        public abstract double Calculate(double Num1, double Num2);
+        public double Calculate(double Num1, double Num2);
     }
 
     public class Addition : Calculation
     {
-        public override double Calculate(double Num1, double Num2)
+        public double Calculate(double Num1, double Num2)
         {
             return Num1 + Num2;
         }
@@ -21,7 +21,7 @@ namespace CS3020_Calculator.Calculations
 
     public class Subtraction : Calculation
     {
-        public override double Calculate(double Num1, double Num2)
+        public double Calculate(double Num1, double Num2)
         {
             return Num1 - Num2;
         }
@@ -29,7 +29,7 @@ namespace CS3020_Calculator.Calculations
 
     public class Multiplication : Calculation
     {
-        public override double Calculate(double Num1, double Num2)
+        public double Calculate(double Num1, double Num2)
         {
             return Num1 * Num2;
         }
@@ -37,7 +37,7 @@ namespace CS3020_Calculator.Calculations
 
     public class Division : Calculation
     {
-        public override double Calculate(double Num1, double Num2)
+        public double Calculate(double Num1, double Num2)
         {
             if (Num2 == 0)
             {
@@ -49,7 +49,7 @@ namespace CS3020_Calculator.Calculations
 
     public class Percentage : Calculation
     {
-        public override double Calculate(double Num1, double Num2)
+        public double Calculate(double Num1, double Num2)
         {
             if (Num2 == 0)
             {
