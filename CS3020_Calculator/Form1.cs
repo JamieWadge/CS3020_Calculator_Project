@@ -72,7 +72,7 @@ namespace CS3020_Calculator
         private void button3_Click(object sender, EventArgs e)
         {
             textBox4.Clear();
-            textBox4.Text = "+";
+            textBox4.Text = "/";
 
             double Num1;
             double Num2;
@@ -104,7 +104,7 @@ namespace CS3020_Calculator
         private void button4_Click(object sender, EventArgs e)
         {
             textBox4.Clear();
-            textBox4.Text = "-";
+            textBox4.Text = "*";
 
             double Num1;
             double Num2;
@@ -129,7 +129,7 @@ namespace CS3020_Calculator
         private void button5_Click(object sender, EventArgs e)
         {
             textBox4.Clear();
-            textBox4.Text = "+";
+            textBox4.Text = "%";
 
             double Num1;
             double Num2;
