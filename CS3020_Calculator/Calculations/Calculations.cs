@@ -47,14 +47,6 @@ namespace CS3020_Calculator.Calculations
         }
     }
 
-    public class SquareRoot : Calculation
-    {
-        public override double Calculate(double Num1, double Num2)
-        {
-            return Math.Sqrt(Num1);
-        }
-    }
-
     public class Percentage : Calculation
     {
         public override double Calculate(double Num1, double Num2)
